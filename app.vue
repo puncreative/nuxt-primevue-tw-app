@@ -5,6 +5,7 @@ const colorMode = useColorMode()
 <template>
   <div>
     <p class="p-4 pb-2">
+      <span class="i-mdi-home hover:i-mdi-home-alert text-5xl text-green-800"></span>
       <select
         v-model="colorMode.preference"
         class="border w-24 h-8 dark:bg-gray-900 dark:text-white dark:border-gray-700"
