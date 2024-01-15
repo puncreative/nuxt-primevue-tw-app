@@ -1,5 +1,11 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+const date = ref()
+</script>
+
 <template>
   <div class="p-4">
+    <Calendar v-model="date" />
     <div class="max-w-sm rounded overflow-hidden shadow-lg mb-4 bg-white dark:bg-gray-900">
       <img
         class="w-full"
@@ -26,6 +32,7 @@
 <style lang="postcss" scoped>
 .badge {
   @apply inline-block bg-gray-200 dark:bg-gray-950 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-400;
+
   &:hover {
     @apply bg-gray-300;
   }
